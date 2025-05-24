@@ -1,23 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kunosik </title>
-  <style>
-    body {
-      background-color: #111;
-      color: #f50404;
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      font-size: 3em;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Chat + Paint</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Witaj na stronie kunosika</h1>
-  <p>Strona w budowie...</p>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Kanały</h2>
+      <ul id="channels">
+        <li># Ogólny</li>
+        <li># Gaming</li>
+        <li># Muzyka</li>
+        <li># Chill</li>
+      </ul>
+    </aside>
+    <main class="main">
+      <header>
+        <input type="text" id="nickname" placeholder="Wpisz swój nick" />
+        <input type="file" id="backgroundUpload" accept="image/*" />
+        <input type="file" id="avatarUpload" accept="image/*" />
+      </header>
+      <div class="chat">
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Napisz wiadomość..." />
+      </div>
+      <canvas id="paint"></canvas>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
