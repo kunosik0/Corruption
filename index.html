@@ -6,27 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dark Chat + Paint</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <aside class="sidebar">
-      <h2>Kanały</h2>
+      <h2><i class="ri-hashtag"></i> Kanały</h2>
       <ul id="channels">
-        <li># Ogólny</li>
-        <li># Gaming</li>
-        <li># Muzyka</li>
-        <li># Chill</li>
+        <li><i class="ri-chat-3-line"></i> # Ogólny</li>
+        <li><i class="ri-gamepad-line"></i> # Gaming 🎮</li>
+        <li><i class="ri-music-2-line"></i> # Muzyka 🎵</li>
+        <li><i class="ri-cup-line"></i> # Chill ☕</li>
       </ul>
+      <div class="discord-invite">
+        <a href="https://discord.gg/qREkmdWN3p" target="_blank">
+          <i class="ri-discord-line"></i> Dołącz na Discord
+        </a>
+      </div>
     </aside>
     <main class="main">
       <header>
-        <input type="text" id="nickname" placeholder="Wpisz swój nick" />
+        <input type="text" id="nickname" placeholder="Wpisz swój nick ✍️" />
         <input type="file" id="backgroundUpload" accept="image/*" />
         <input type="file" id="avatarUpload" accept="image/*" />
       </header>
       <div class="chat">
         <div id="chat-box"></div>
-        <input type="text" id="chat-input" placeholder="Napisz wiadomość..." />
+        <input type="text" id="chat-input" placeholder="Napisz wiadomość... 💬" />
       </div>
       <canvas id="paint"></canvas>
     </main>
